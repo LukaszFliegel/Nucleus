@@ -1,3 +1,14 @@
 <div>
-    <span>Achievement list here</span>
+    <table class="mdl-data-table mdl-js-data-table" *ngIf='achievements && achievements.length'>
+        <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let achievement of achievements'>
+                <td class="mdl-data-table__cell--non-numeric">{{achievement.AchievementName}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

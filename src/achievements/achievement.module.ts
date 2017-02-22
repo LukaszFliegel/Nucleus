@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AchievementListComponent } from './achievementList.component';
 
@@ -10,7 +11,8 @@ import { AchievementRoutingModule } from './achievement-routing.module';
         AchievementListComponent
     ],
     imports:[
-        AchievementRoutingModule
+        AchievementRoutingModule,
+        BrowserModule
     ]
 })
 export class AchievementModule{
