@@ -1,0 +1,22 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading">Achievements</div>
+  <div class="panel-body">
+    <table class="table" *ngIf='achievements && achievements.length'>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let achievement of achievements'>
+                <td>{{achievement.name}}</td>
+                <td>{{achievement.description}}</td>
+                <td><a [routerLink]="['/detail', achievement.id]">Show</a></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<!--<div class="panel panel-default" *ngIf='achievement'>
+  <div class="panel-heading" >{{achievement.name}}</div>
+    <div class="panel-body">
+      {{achievement.description}}
+    </div>
+</div>-->
+
+<div class="panel panel-default" *ngIf='achievement'>
+  <div class="panel-heading">Achievement</div>
+  <div class="panel-body">
+
+    <div class="input-group">
+      <label>Name</label>
+      <input type="text" class="form-control" placeholder="Name" [(ngModel)]='achievement.name' >
+    </div>
+    
+    <div class="input-group">
+      <label>Description</label>
+      <input type="text" class="form-control" placeholder="Description" [(ngModel)]='achievement.description' >
+    </div>
+ </div>
+ <div class="panel-footer">
+   <button type="button" class="btn btn-primary" (click)='onSave()'>Save</button>
+ </div>
+</div>

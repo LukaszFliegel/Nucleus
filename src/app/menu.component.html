@@ -1,4 +1,10 @@
-<nav class="mdl-navigation ">
-    <a class="mdl-navigation__link" [routerLink]="['/welcome']">Home</a>
-    <a class="mdl-navigation__link" [routerLink]="['/achievements']">Achievements</a>
+<nav class="navbar navbar-default navbar-static-top">
+  <!--<div class="container">
+        <a [routerLink]="['/welcome']">Home</a>
+        <a [routerLink]="['/achievements']">Achievements</a>
+    </div>-->
+    <div class="container-fluid">
+        <a class="navbar-brand" [routerLink]="['/welcome']">Home</a>
+        <a class="navbar-brand" [routerLink]="['/achievements']">Achievements</a>
+    </div>
 </nav>

@@ -1,4 +1,5 @@
 export interface IAchievement {
-    Id: number;
-    AchievementName: string;
+    id: number;
+    name: string;
+    description: string;    
 }
